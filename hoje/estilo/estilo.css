@@ -1,4 +1,92 @@
+@import url(reset.css);
+@import url(padrao.css);
 body{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(247, 246, 246);
+}
+
+.barra-login{
+    background-color: var(--cor-fundo-barra);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 3px 3px 1px rgb(19, 138, 98);
+}
+.esqueci-senha {
+    font-size: 14px;
+    margin-bottom: 3px;
+    text-align: end;
+}
+
+.campoBtn {
+    width: 50px;
+    height: 30px;
+    position: relative;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.formLogin {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.campoInput {
+    width: 200px;
+    height: 40px;
+    position: relative;
+    margin: 3rem 0;
+}
+.campoInput input {
+    position: absolute;
+    background-color: transparent;
+    inset: 0;
+    padding: 0 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid white;
+    border-radius: .5rem;
+    color: rgb(11, 27, 80);
+    margin-right: 8px;
+}
+.campoInput label {
+    position: relative;
+    top: 30%;
+    left: 1rem;
+    transform: translateY(-30%);
+    color: rgb(11, 27, 80);
+    font-size: 1rem;
+    pointer-events: none;
+    padding: 0 .3rem;
+    background-color: var(--cor-fundo-barra);
+    transition: 200ms ease-in-out top,
+                200ms ease-in-out font-size,
+                200ms ease-in-out color;
+}
+.campoInput input:focus + label,
+.campoInput input:valid + label {
+    top: -10px;
+    font-size: .8rem;
     color: white;
 }
+
+.campoBtn button {
+    border: none;
+    padding: 5px;
+    background-color: rgb(217, 197, 239);
+    box-shadow: 4px 2px 2px blueviolet;
+    border-radius: 4px;
+    
+}   
+
+.campoBtn button:hover {
+    border: none;
+    padding: 5px;
+    background-color: rgb(117, 0, 239);
+    color: white;
+    box-shadow: 4px 2px 2px rgb(0, 17, 255);
+    border-radius: 2px;
+}   
