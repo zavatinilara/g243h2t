@@ -4,45 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOCORRODEUS</title>
-    <link rel="stylesheet" href="./estilo/estilo.css">
-    <link rel="stylesheet" href="./estilo/reset.css">
-    <script src="./script/inicio.js" defer ></script>
+    <title>Ordenadores</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="ordenadores.js" defer></script>
 </head>
 <body>
-    <header class="barra-login">
-        <div class="info-barra">
-        </div>
-        <div class="cadastro">
-            <div><a href="./paginas/cadastro.html">Cadastro</a></div>
-        </div>
-        <div class="login-usuario">
-
-            <form action="" class="formLogin">
-
-                <div class="campoInput">
-                    <input type="text" id="usuario" name="usuario" placeholder="">
-                    <label for="usuario">Usuario</label>
-                </div>
-
-                <div class="campoInput">
-                    <input type="password" id="senha" name="senha" placeholder="">
-                    <label for="senha">Senha</label>
-                </div>
-                
-                <div class="campoBtn">
-                <button type="submit">OK</button>
-                </div>
-            
-            </form>
-
-            <div class="esqueci-senha"><a href="recuperarsenha.html">Esqueci a Senha</a></div>
-
-        </div>
-    </header>
-    <section class="pricipal">
+    <section>
+        <div><span id="saida_lista"></span></div>
+        <div><button onclick="bubbleSort()">Bubble</button></div>
     </section>
-    <footer class="rodape">
-    </footer>
+    
 </body>
 </html>
